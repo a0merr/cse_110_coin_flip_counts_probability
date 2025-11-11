@@ -1,6 +1,6 @@
 import random 
 
-n = 5
+n = 1_000_000
 
 numTails = 0
 numHeads = 0
@@ -12,6 +12,6 @@ else:
     numHeads +=1
   
 
-print("Number of Heads:", numHeads)
-print("Number of Tails", numTails)
+print("Number of Heads:", numHeads,"({0:f})".format(numHeads/n) )
+print("Number of Tails", numTails, "({0:f})".format(numTails/n))
 print("Number of Trials:" numHeads + numTails)
